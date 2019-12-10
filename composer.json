@@ -1,6 +1,6 @@
 {
     "name": "redgoose/console",
-    "description": "description text",
+    "description": "use javascript `console.log()` interface",
     "license": "MIT",
     "authors": [
         {
