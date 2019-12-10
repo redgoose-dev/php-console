@@ -1,0 +1,17 @@
+{
+    "name": "redgoose/console",
+    "description": "description text",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "redgoose",
+            "email": "scripter@me.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0"
+    },
+    "autoload": {
+        "classmap": ["src/Console.php"]
+    }
+}
