@@ -21,14 +21,27 @@ class Console {
   {
     try
     {
-      if (!$src) throw new Exception('');
-      $source = json_encode($src);
+      if ($src === 0)
+      {
+        return '0';
+      }
+      else if (is_null($src))
+      {
+        return 'null';
+      }
+      else if ($src)
+      {
+        return json_encode($src);
+      }
+      else
+      {
+        throw new Exception();
+      }
     }
     catch(Exception $e)
     {
-      $source = '';
+      return 'undefined';
     }
-    return $source;
   }
 
   /**
@@ -61,6 +74,10 @@ class Console {
         $arr[] = $parse;
       }
       $parse = implode(', ', $arr);
+    }
+    else
+    {
+      return 'undefined';
     }
     return $parse;
   }
